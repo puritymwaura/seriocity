@@ -20,3 +20,29 @@ async function getSeries(url) {
     console.log(respData);
     showSeries(respData.results);
 }
+function showSeries(series) {
+    // clear main
+    main.innerHTML = "";
+    series.forEach((series) => {
+        const { poster_path, title, vote_average, overview } = series;
+        const seriesEl = document.createElement("div");
+        seriesEl.classList.add("series");
+        seriesEl.innerHTML = `
+            <img
+                src="${IMGPATH + poster_path}"
+                alt="${title}"
+            />
+            <div class="series-info">
+                <h3>${title}</h3>
+                <span class="${getClassByRate(
+                    vote_average
+                )}">${vote_average}</span>
+            </div>
+            <div class="overview">
+                <h3>Overview:</h3>
+                ${overview}
+            </div>
+        `;
+        main.appendChild(seriesEl);
+    });
+}
