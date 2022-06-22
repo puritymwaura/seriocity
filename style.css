@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #030303;
+    font-family: "Verdana", sans-serif;
+    margin: 0;
+}
+header {
+    background-color: #363636;
+    display: flex;
+}
+h1{
+    color: whitesmoke;
+    align-self: center;
+    margin-left: 28rem;
+}
+.search {
+    margin: 3rem;
+    margin-left: 12rem;
+    background-color: transparent;
+    border: 2px solid #E9E9EC;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+.search::placeholder {
+    color: #7378C5;
+}
+.search:focus {
+    background-color: #050505;
+    outline: none;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.series {
+    background-color: #373B69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    justify-content: center;
+    align-content: center;
+    width: 265px;
+}
+
+.series img {
+    width: 100%;
+}
+.series-info {
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+.series-info h3 {
+    margin: 0;
+}
+.series-info span {
+    background-color: #22254B;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.8rem;
+}
