@@ -138,7 +138,7 @@ div{
     display: flex;
     flex-wrap: wrap;
 }
-.movie {
+.series {
     background-color: #373B69;
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
@@ -149,11 +149,11 @@ div{
     align-content: center;
     width: 265px;
 }
-.movie img {
+.series img {
     width: 100%;
 }
 
-.movie-info {
+.series-info {
     color: #eee;
     display: flex;
     flex-direction: column;
@@ -162,21 +162,38 @@ div{
     padding: 0.5rem 1rem 1rem;
     letter-spacing: 0.5px;
 }
-.movie-info h3 {
+.series-info h3 {
     margin: 0;
 }
-.movie-info span {
+.series-info span {
     background-color: #22254B;
     border-radius: 3px;
     font-weight: bold;
     padding: 0.25rem 0.8rem;
 }
-.movie-info span.green {
+.series-info span.green {
     color: rgb(39, 189, 39);
 }
-.movie-info span.orange {
+.series-info span.orange {
     color: orange;
 }
-.movie-info span.red {
+.series-info span.red {
     color: rgb(189, 42, 42);
+}
+background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+.overview h3 {
+    margin-top: 0;
+}
+.movie:hover .overview {
+    transform: translateY(0);
 }

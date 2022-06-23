@@ -24,16 +24,20 @@ function showSeries(series) {
     // clear main
     main.innerHTML = "";
     series.forEach((series) => {
-        const { poster_path, title, vote_average, overview } = series;
+        const { poster_path, original_name, vote_average, overview } = series;
+        // console.log(original_name);
+        // console.log(overview);
+        console.log(poster_path)
+        
         const seriesEl = document.createElement("div");
         seriesEl.classList.add("series");
         seriesEl.innerHTML = `
             <img
                 src="${IMGPATH + poster_path}"
-                alt="${title}"
+                alt="${original_name}"
             />
             <div class="series-info">
-                <h3>${title}</h3>
+                <h3>${original_name}</h3>
                 <span class="${getClassByRate(
                     vote_average
                 )}">${vote_average}</span>
