@@ -15,7 +15,7 @@ const search = document.getElementById("search");
 // initially get fav series
 getSeries(APIURL);
 async function getSeries(url) {
-    
+
     const resp = await fetch(url);
     const respData = await resp.json();
     console.log(respData);
