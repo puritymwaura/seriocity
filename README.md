@@ -43,4 +43,5 @@ function showSeries(series) {
         main.appendChild(seriesEl);
     });
 }
-
+click this link to go to my website
+https://puritymwaura.github.io/seriocity/
